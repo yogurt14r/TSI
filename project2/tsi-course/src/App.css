@@ -1,8 +1,8 @@
 @import "tailwindcss";
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -40,37 +40,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
-.header {
-  display: flex;
-  gap: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 25px;
-  text-align: center;
-  font-size: 14pt;
-}
-.header a {
-  color: white;
-}
-.header a:hover {
-  color: rgb(160, 11, 160);
-  text-decoration: underline;
-}
-
-.footer {
-  position: fixed; /* Фиксируем внизу */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
 }

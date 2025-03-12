@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const Footer = () => {
-    return <div className="fixed bottom-0 left-0 w-full h-[250px] bg-[#2A303E] text-white text-center p-[125px] text-[14px]">
+    return <div className="w-full h-[245px] bg-[#3c3c3b] text-white text-center text-[14px] p-[25px]">
         © 2025 TSI
     </div>
 }
