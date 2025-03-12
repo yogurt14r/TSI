@@ -8,26 +8,16 @@ const LoginModal = ({ isOpen, onClose }) => {
             <div className="w-[480px] bg-white text-black p-6 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-bold mb-4">Вход</h2>
                 <form>
-                <div className="mb-4">
+                    <div className="mb-4">
                         <label className="block text-sm font-medium mb-2">Номер телефона</label>
-                        <input
-                            type="tel"
-                            className="w-full p-2 border rounded"
-                            placeholder="+7 (___) ___-__-__"
-                        />
+                        <input type="tel" className="w-full p-2 border rounded" placeholder="+7 (___) ___-__-__" />
                     </div>
-                <button
-                    type="submit"
-                    className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
-                >
-                    Получить код в СМС
-                </button>
+                    <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                        Получить код в СМС
+                    </button>
                 </form>
-                <button
-                onClick={onClose}
-                className="mt-4 w-full bg-gray-300 text-black p-2 rounded hover:bg-gray-400"
-                >
-                Закрыть
+                <button onClick={onClose} className="mt-4 w-full bg-gray-300 text-black p-2 rounded hover:bg-gray-400">
+                    Закрыть
                 </button>
             </div>
         </div>
