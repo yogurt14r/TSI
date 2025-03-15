@@ -8,6 +8,7 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Header from './components/Header';
 import samsa from './assets/samsa.png'
+import Sidebar from './components/Sidebar';
 
 
 
@@ -20,7 +21,7 @@ function App() {
         <BrowserRouter>
           <Header />
           <Navigation />
-          <main className="flex-grow text-black">
+          <main className="text-black">
             <section>
             <div className="flex justify-center items-center max-w-[1200px] mx-auto">
               <div className="text-left">
@@ -32,11 +33,16 @@ function App() {
               <div className="w-[500px] h-auto"><img src={samsa} alt="Самса" /></div>
             </div>
             </section>
-            <Routes>
-              <Route path="/" element={<Home />}/>
-              <Route path="/about" element={<About />}/>
-              <Route path="/blog" element={<Blog />}/>
-            </Routes>
+            <section className="flex">
+              <Sidebar />
+              <div className="flex-1">
+                <Routes>
+                  <Route path="/" element={<Home />}/>
+                  <Route path="/about" element={<About />}/>
+                  <Route path="/blog" element={<Blog />}/>
+                </Routes>
+              </div>
+            </section>
             
           </main>
           <Footer />

@@ -16,7 +16,7 @@ const Header = () => {
                             <div className="font-bold">Доставка самсы Якутск</div>
                         </div>
                         
-                        <Button onClick={() => setIsLoginModalOpen(true)}>Войти</Button>
+                        <Button onClick={() => setIsLoginModalOpen(true)} className="bg-[#009394]/[.6]">Войти</Button>
                     </div>
                 </div>
                 <LoginModal isOpen={isLoginModalOpen} onClose={() => setIsLoginModalOpen(false)}/>
