@@ -15,7 +15,12 @@ const Input = ({
         value={value}
         onChange={onChange}
         disabled={disabled}
-        className={`w-full p-2 border rounded-[8px] focus:outline-none focus:ring-2 focus:ring-blue-500 ${className}`}
+        className={`bg-gray-100 border-none
+    shadow-[inset_0_0_0_1px_#d1d5db]
+    focus:shadow-[inset_0_0_0_2px_#00e0c7]
+    focus:outline-none
+    transition-shadow
+    duration-200 ${className}`}
         />
     );
 };
